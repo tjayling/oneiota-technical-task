@@ -1,10 +1,10 @@
-# OneIota golang challenge
+# OneIota go challenge
 ## Structure
 In terms of structure, I went for a 3 layer application, where the `main` function serves as the controller layer. 
 
 The service layer retrieves data in the correct format from the repo, applies any business logic, and returns the data to the controller. 
 
-The repository layer communicates with the CSV data, and converts it into structs that match the specified structure.
+The repository layer extracts data from the CSV file, and maps it to a product struct that match the specified structure.
 
 Models and any logic surrounding them are in their own package. Some of the models will implement the Sort interface in order to define custom sorting criteria.
 
